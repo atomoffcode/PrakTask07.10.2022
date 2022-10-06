@@ -9,11 +9,14 @@ namespace PrakTask07._10._2022.Models
         public double FuelCapaciy;
         public double CurrentFuel;
         public double FuelFor1km;
-        public Car(string color, string brand, double millage) : base(color, brand, millage)
+        public Car(string color, string brand, double millage,double fuelcapacity,double currentfuel,double fuelfor1km) : base(color, brand, millage)
         {
             Color = color;
             Brand = brand;
             Millage = millage;
+            FuelCapaciy = fuelcapacity;
+            CurrentFuel = currentfuel;
+            FuelFor1km = fuelfor1km;
         }
 
         public override void Drive(double amount)
